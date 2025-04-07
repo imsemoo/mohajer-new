@@ -20,6 +20,8 @@ $(document).ready(function () {
       autoplay: true,        
       autoplayTimeout: 3000, 
       autoplayHoverPause: true, 
+      animateOut: 'slideOutDown',
+      animateIn: 'flipInX',
       responsive: {
         0: {
           items: 1          
