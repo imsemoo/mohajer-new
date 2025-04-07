@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Set character encoding -->
+  <meta charset="UTF-8" />
+  <!-- Responsive design: set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Page Title -->
+  <title>المهاجر - منصة إعلامية وخدمية للمهاجرين واللاجئين</title>
+
+  <!-- SEO: Meta Description -->
+  <meta name="description"
+    content="المهاجر: منصة إعلامية وخدمية موجهة للمهاجرين واللاجئين في مصر والشرق الأوسط. نحن وسطاء بين المهاجرين والمنظمات الأممية والجهات الحكومية، نوفر لكم الدعم القانوني والمعلوماتي واللوجستي." />
+
+  <!-- SEO: Meta Keywords -->
+  <meta name="keywords"
+    content="المهاجر, مهاجرين, لاجئين, مصر, الشرق الأوسط, دعم قانوني, معلوماتي, لوجيستي, منصة إخبارية, منصة إعلامية" />
+
+  <!-- SEO: Allow search engines to index and follow links -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- SEO: Specify the canonical URL -->
+  <link rel="canonical" href="https://elmohajernews.com" />
+
+  <!-- Additional Meta Tags -->
+  <meta name="author" content="المهاجر" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- SEO: Open Graph additional tags for social sharing -->
+  <meta property="og:site_name" content="المهاجر" />
+  <!-- Optional: Specify your Twitter handle if available -->
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+
+  <!-- Optimization: Preconnect to external domains for faster resource loading -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="المهاجر - منصة إعلامية وخدمية للمهاجرين واللاجئين" />
+  <meta property="og:description"
+    content="المهاجر: منصتكم الموثوقة للحصول على الدعم القانوني والمعلوماتي واللوجستي للمهاجرين واللاجئين في مصر والشرق الأوسط." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://elmohajernews.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="المهاجر - منصة إعلامية وخدمية للمهاجرين واللاجئين" />
+  <meta name="twitter:description"
+    content="المهاجر: منصتكم الموثوقة للحصول على الدعم القانوني والمعلوماتي واللوجستي للمهاجرين واللاجئين في مصر والشرق الأوسط." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Preload critical CSS and JS files for performance optimization -->
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="preload" href="js/script.js" as="script" />
+
+  <!-- Structured Data: Website Schema (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "المهاجر",
+      "url": "https://elmohajernews.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://elmohajernews.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- Additional Structured Data: Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "المهاجر",
+      "url": "https://elmohajernews.com",
+      "logo": "https://elmohajernews.com/img/logo.svg",
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://twitter.com/",
+        "https://www.instagram.com/",
+        "https://www.youtube.com/"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Bar Section -->
+  <nav class="custom-navbar">
+    <!-- Top Bar: Contains search box, centered logo, and social media icons -->
+    <div class="navbar-top">
+      <div class="container">
+        <div class="navbar-top-content">
+          <!-- Search Box -->
+          <div class="navbar-search">
+            <form action="search.html" method="get">
+              <input type="text" placeholder="بحث..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <!-- Centered Logo -->
+          <div class="navbar-logo">
+            <a href="index.html">
+              <img src="img/logo.svg" alt="شعار المهاجر">
+            </a>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="navbar-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar: Contains navigation links and mobile controls -->
+    <div class="navbar-bottom">
+      <div class="container">
+        <div class="navbar-bottom-content">
+          <!-- Hamburger Menu for Mobile -->
+          <div class="navbar-mobile-menu">
+            <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+          </div>
+          <!-- Desktop Navigation Links -->
+          <ul class="navbar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about-us.html">عن المهاجر</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="articles.html">المقالات</a></li>
+            <li><a href="single-article.html">المقال مفرد</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            <li><a href="blog.html">المدونة</a></li>
+            <!-- Mega Menu with Dropdown Options -->
+            <li class="mega-menu">
+              <a href="#">المزيد <i class="fa fa-caret-down"></i></a>
+              <div class="mega-menu-content">
+                <div class="mega-menu-wrapper">
+                  <div class="mega-menu-column">
+                    <h4>قسم 1</h4>
+                    <ul>
+                      <li><a href="#">الرابط 1</a></li>
+                      <li><a href="#">الرابط 2</a></li>
+                      <li><a href="#">الرابط 3</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h4>قسم 2</h4>
+                    <ul>
+                      <li><a href="#">الرابط 4</a></li>
+                      <li><a href="#">الرابط 5</a></li>
+                      <li><a href="#">الرابط 6</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h4>قسم 3</h4>
+                    <ul>
+                      <li><a href="#">الرابط 7</a></li>
+                      <li><a href="#">الرابط 8</a></li>
+                      <li><a href="#">الرابط 9</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Mobile Search Icon -->
+          <div class="navbar-mobile-search">
+            <button class="mobile-search-toggle"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Home News Section -->
+    <section class="home-news-section">
+      <div class="container h-100">
+        <!-- Using Bootstrap row with three columns -->
+        <div class="row g-3 h-100">
+          <!-- Left Column: Two Medium News Items -->
+          <div class="col-lg-3 d-flex flex-column">
+            <!-- Medium News Item #1 -->
+            <div class="d-flex flex-column mb-3 news-box">
+              <!-- News Image -->
+              <div class="img-card">
+                <img src="https://dummyimage.com/300x200/dddddd/000000" alt="خبر متوسط 1" class="img-fluid">
+              </div>
+              <div class="body-card">
+                <!-- News Title -->
+                <h5 class="news-title mb-1">تحديث حول مشاريع التنمية المحلية</h5>
+                <!-- News Description -->
+                <p class="news-description mb-0">
+                  أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية التحتية في المناطق الريفية.
+                </p>
+              </div>
+            </div>
+
+            <!-- Medium News Item #2 -->
+            <div class="d-flex flex-column news-box">
+              <div class="img-card">
+                <img src="https://dummyimage.com/300x200/dddddd/000000" alt="خبر متوسط 1" class="img-fluid">
+              </div>
+              <div class="body-card">
+                <h5 class="news-title mb-1">تحديث حول مشاريع التنمية المحلية</h5>
+                <p class="news-description mb-0">
+                  أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية التحتية في المناطق الريفية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Column: One Large News Item -->
+          <div class="col-lg-6 d-flex">
+            <div class="main-news-box">
+              <img src="https://dummyimage.com/600x500/dddddd/000000" alt="خبر كبير" class="img-fluid">
+              <div class="body-card">
+                <!-- Meta information: Date, Author, Category -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-user"></i> بقلم أحمد يوسف</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <!-- Large News Title -->
+                <h4 class="news-title mb-1">قمة إقليمية لمناقشة سبل التعاون المشترك</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: "ما يحدث الآن" Section with Small News Items -->
+          <div class="col-lg-3 d-flex flex-column">
+            <div class="container-small-cards">
+              <!-- Section Title and "See More" link -->
+              <div class="title-small-cards">
+                <h5>ما يحدث الآن...</h5>
+                <a href="#" class="see-all">عرض المزيد
+                  <i class="fa-solid fa-angles-left"></i>
+                </a>
+              </div>
+              <div class="list-small-cards">
+                <!-- Small News Item #1 -->
+                <div class="d-flex mb-3 news-box gap-2 news-box-small">
+                  <div class="img-card">
+                    <img src="https://dummyimage.com/80x80/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+                  </div>
+                  <div class="body-card">
+                    <h6 class="news-title mb-1">افتتاح معرض الكتاب السنوي</h6>
+                    <p class="news-description mb-0">
+                      شهد المعرض إقبالًا كبيرًا من القراء والناشرين من مختلف الدول.
+                    </p>
+                  </div>
+                </div>
+                <!-- Small News Item #2 -->
+                <div class="d-flex mb-3 news-box gap-2 news-box-small">
+                  <div class="img-card">
+                    <img src="https://dummyimage.com/80x80/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+                  </div>
+                  <div class="body-card">
+                    <h6 class="news-title mb-1">افتتاح معرض الكتاب السنوي</h6>
+                    <p class="news-description mb-0">
+                      شهد المعرض إقبالًا كبيرًا من القراء والناشرين من مختلف الدول.
+                    </p>
+                  </div>
+                </div>
+                <!-- Small News Item #3 -->
+                <div class="d-flex mb-3 news-box gap-2 news-box-small">
+                  <div class="img-card">
+                    <img src="https://dummyimage.com/80x80/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+                  </div>
+                  <div class="body-card">
+                    <h6 class="news-title mb-1">افتتاح معرض الكتاب السنوي</h6>
+                    <p class="news-description mb-0">
+                      شهد المعرض إقبالًا كبيرًا من القراء والناشرين من مختلف الدول.
+                    </p>
+                  </div>
+                </div>
+                <!-- Small News Item #4 -->
+                <div class="d-flex mb-3 news-box gap-2 news-box-small">
+                  <div class="img-card">
+                    <img src="https://dummyimage.com/80x80/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+                  </div>
+                  <div class="body-card">
+                    <h6 class="news-title mb-1">افتتاح معرض الكتاب السنوي</h6>
+                    <p class="news-description mb-0">
+                      شهد المعرض إقبالًا كبيرًا من القراء والناشرين من مختلف الدول.
+                    </p>
+                  </div>
+                </div>
+                <!-- Small News Item #5 -->
+                <div class="d-flex  news-box gap-2 news-box-small">
+                  <div class="img-card">
+                    <img src="https://dummyimage.com/80x80/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+                  </div>
+                  <div class="body-card">
+                    <h6 class="news-title mb-1">افتتاح معرض الكتاب السنوي</h6>
+                    <p class="news-description mb-0">
+                      شهد المعرض إقبالًا كبيرًا من القراء والناشرين من مختلف الدول.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Featured Articles Section -->
+<section class="featured-articles-section">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="section-title d-flex align-items-center gap-2 mb-4">
+      <img src="img/icons/title-icon.svg" alt="">
+      <h2>أخبار</h2>
+    </div>
+    <div class="row g-3">
+      <!-- Left Column: List of Articles -->
+      <div class="col-md-6">
+        <div class="article-list">
+          <!-- Article 1 -->
+          <div class="d-flex mb-3 news-box">
+            <div class="img-card">
+              <img src="https://dummyimage.com/220x160/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+            </div>
+            <div class="body-card">
+              <!-- Meta information: publication date, author, and category -->
+              <div class="news-meta mb-2">
+                <span class="news-date"><i class="fa fa-calendar-alt"></i> 15 أبريل 2025</span>
+                <span class="news-author"><i class="fa fa-user"></i> بقلم سامي أحمد</span>
+                <span class="news-category"><i class="fa fa-tag"></i> ثقافة</span>
+              </div>
+              <h6 class="news-title mb-2">تهجير وعنف.. واقع نساء غزة تحت الإبادة الجماعية</h6>
+              <p class="news-description mb-0">
+                أصدرت أونروا تقريراً جديداً يكشف تفاقم العنف والتهجير ضد النساء في غزة، مما يسلط الضوء على أزمة إنسانية متفاقمة.
+              </p>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="d-flex mb-3 news-box">
+            <div class="img-card">
+              <img src="https://dummyimage.com/220x160/dddddd/000000" alt="خبر صغير 1" class="img-fluid">
+            </div>
+            <div class="body-card">
+              <!-- Meta information -->
+              <div class="news-meta mb-2">
+                <span class="news-date"><i class="fa fa-calendar-alt"></i> 15 أبريل 2025</span>
+                <span class="news-author"><i class="fa fa-user"></i> بقلم سامي أحمد</span>
+                <span class="news-category"><i class="fa fa-tag"></i> ثقافة</span>
+              </div>
+              <h6 class="news-title mb-2">ظروف معيشية صعبة.. اللاجئون في مواجهة تحديات يومية</h6>
+              <p class="news-description mb-0">
+                تواجه الأسر اللاجئة في المناطق الحدودية صعوبات كبيرة في تأمين الاحتياجات الأساسية وسط نقص الخدمات والمساعدات.
+              </p>
+            </div>
+          </div>
+          <!-- Article 3 -->
+          <div class="d-flex mb-3 news-box">
+            <div class="img-card">
+              <img src="https://dummyimage.com/220x160/cccccc/000000" alt="خبر صغير 2" class="img-fluid">
+            </div>
+            <div class="body-card">
+              <!-- Meta information -->
+              <div class="news-meta mb-2">
+                <span class="news-date"><i class="fa fa-calendar-alt"></i> 20 أبريل 2025</span>
+                <span class="news-author"><i class="fa fa-user"></i> بقلم ليلى حسن</span>
+                <span class="news-category"><i class="fa fa-tag"></i> مجتمع</span>
+              </div>
+              <h6 class="news-title mb-2">مشروع إنعاش: مبادرة جديدة لدعم اللاجئين في مصر</h6>
+              <p class="news-description mb-0">
+                أطلقت وزارة الهجرة مبادرة شاملة تهدف إلى توفير فرص عمل وبرامج تدريبية لتعزيز اندماج اللاجئين في المجتمع المصري.
+              </p>
+            </div>
+          </div>
+          <!-- Article 4 -->
+          <div class="d-flex news-box">
+            <div class="img-card">
+              <img src="https://dummyimage.com/220x160/bbbbbb/000000" alt="خبر صغير 3" class="img-fluid">
+            </div>
+            <div class="body-card">
+              <!-- Meta information -->
+              <div class="news-meta mb-2">
+                <span class="news-date"><i class="fa fa-calendar-alt"></i> 22 أبريل 2025</span>
+                <span class="news-author"><i class="fa fa-user"></i> بقلم أحمد زكي</span>
+                <span class="news-category"><i class="fa fa-tag"></i> سياسة</span>
+              </div>
+              <h6 class="news-title mb-2">تحذير إنساني: ازدياد حالات اللجوء في الشرق الأوسط</h6>
+              <p class="news-description mb-0">
+                أظهر تقرير حديث ارتفاعاً ملحوظاً في أعداد اللاجئين نتيجة للنزاعات المتصاعدة في بعض مناطق الشرق الأوسط، مما يستدعي تدخلًا عاجلًا.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Column: Slider and Featured Small Articles -->
+      <div class="col-md-6">
+        <!-- Owl Carousel Slider for Articles -->
+        <div class="owl-carousel owl-theme" id="articlesSlider">
+          <!-- Slide 1 -->
+          <div class="item article-slide">
+            <div class="article-card">
+              <!-- Article image (unchanged) -->
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <!-- Article information -->
+              <div class="article-info">
+                <!-- Meta: publication date, author, and category -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-user"></i> بقلم أحمد يوسف</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">أوروبا تعلق خدماتها في مخيم جينن</h6>
+                <p class="article-desc mb-0">
+                  تقرير خاص يكشف قرار تعليق الخدمات الإنسانية في مخيم جينن وتأثيره المباشر على حياة اللاجئين.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="item article-slide">
+            <div class="article-card">
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <div class="article-info">
+                <!-- Meta information -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-user"></i> بقلم أحمد يوسف</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">التوتر يزداد: أزمة مخيمات اللاجئين في شرق البحر الأبيض المتوسط</h6>
+                <p class="article-desc mb-0">
+                  تحليل ميداني يكشف تصاعد التوترات في مخيمات اللاجئين وتأثيرها السلبي على استقرار المجتمعات المحلية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="item article-slide">
+            <div class="article-card">
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <div class="article-info">
+                <!-- Meta information -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-user"></i> بقلم أحمد يوسف</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">مبادرة إنسانية: إعادة تأهيل مراكز اللجوء في مصر</h6>
+                <p class="article-desc mb-0">
+                  جهود مشتركة لتحديث وتطوير مراكز اللجوء بهدف تحسين ظروف المعيشة وتقديم خدمات إنسانية أفضل.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="item article-slide">
+            <div class="article-card">
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <div class="article-info">
+                <!-- Meta information -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-user"></i> بقلم أحمد يوسف</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">صوت اللاجئين: قصص نجاح في مواجهة التحديات</h6>
+                <p class="article-desc mb-0">
+                  سلسلة تقارير تسلط الضوء على قصص ملهمة من اللاجئين الذين حولوا التحديات إلى فرص لتحقيق مستقبل أفضل.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Owl Carousel Slider -->
+
+        <!-- Featured Small List Articles -->
+        <div class="list-featured-small">
+          <!-- Small Article 1 -->
+          <div class="article-slide">
+            <div class="article-card">
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <div class="article-info">
+                <!-- Meta information (date and category only) -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">تدخل إنساني عاجل في مخيم جينن</h6>
+                <p class="article-desc mb-0">
+                  مبادرة دولية تهدف لإعادة فتح الخدمات الأساسية في مخيم جينن استجابةً للأزمة الإنسانية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Small Article 2 -->
+          <div class="article-slide">
+            <div class="article-card">
+              <div class="img-card">
+                <img src="https://dummyimage.com/350x200/cccccc/000" alt="صورة المقال" class="img-fluid">
+              </div>
+              <div class="article-info">
+                <!-- Meta information (date and category only) -->
+                <div class="news-meta mb-2">
+                  <span><i class="far fa-calendar-alt"></i> 21 مارس 2025</span>
+                  <span><i class="fas fa-tag"></i> سياسة</span>
+                </div>
+                <h6 class="article-title mb-1">نداء للمجتمع الدولي: دعم اللاجئين بطرق مستدامة</h6>
+                <p class="article-desc mb-0">
+                  دعوة من خبراء ومحللين لاتخاذ خطوات عملية لتحسين أوضاع اللاجئين في ظل الأزمات المتلاحقة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Featured Small List Articles -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Footer Column 1: Logo and Description -->
+        <div class="footer-column footer-logo-desc">
+          <a href="index.html" class="footer-logo-link">
+            <img src="img/logo.svg" alt="شعار المهاجر" class="footer-logo">
+          </a>
+          <p class="footer-description">
+            منصة المهاجر هي موقع إعلامي وخدمي موجه للمهاجرين واللاجئين، نقدم دعم قانوني ومعلوماتي ولوجيستي لتحقيق بداية
+            جديدة.
+          </p>
+        </div>
+        <!-- Footer Column 2: Useful Links -->
+        <div class="footer-column footer-links">
+          <h4>روابط مفيدة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">عن الموقع</a></li>
+            <li><a href="#">الخدمات</a></li>
+            <li><a href="#">المقالات</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column 3: Explore -->
+        <div class="footer-column footer-links">
+          <h4>استكشاف</h4>
+          <ul>
+            <li><a href="#">معرض الصور</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">المدونة</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column 4: Data and Social Media Links -->
+        <div class="footer-column footer-data">
+          <h4>بياناتنا</h4>
+          <p>تابعونا على مواقع التواصل الاجتماعي للبقاء على اطلاع دائم بآخر أخبارنا وتحديثاتنا.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom: Copyright Information -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 جميع الحقوق محفوظة لموقع المهاجر</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/animation.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
