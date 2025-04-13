@@ -40,9 +40,13 @@
 
 @font-face {
   font-family: "cairo-Regular";
-  src: url(../fonts/Al-Jazeera-Arabic\ Regular.ttf);
+  src: url(../fonts/Cairo-Regular.ttf);
 }
 
+@font-face {
+  font-family: "cairo-Medium";
+  src: url(../fonts/Cairo-Medium.ttf);
+}
 @font-face {
   font-family: "cairo-SemiBold";
   src: url(../fonts/Cairo-SemiBold.ttf);
