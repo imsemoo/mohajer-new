@@ -2053,4 +2053,8 @@ input[type="date"]::-moz-push-button {
   .list-featured-small .article-slide .img-card {
     height: 300px;
   }
+
+  .sidebar{
+    margin-top: 40px;
+  }
 }
