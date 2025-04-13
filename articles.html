@@ -83,92 +83,124 @@
 </head>
 
 <body>
-    <!-- Navbar Section (Reused from main template) -->
-    <nav class="custom-navbar">
-        <!-- Top Bar: Search, Logo, and Social Icons -->
+    <div id="preloadr">
+        <div class="typewriter">
+          <div class="slide"><i></i></div>
+          <div class="paper"></div>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+      <!-- Navigation Bar Section -->
+      <nav class="custom-navbar">
+        <!-- Top Bar: Contains search box, centered logo, and social media icons -->
         <div class="navbar-top">
-            <div class="container">
-                <div class="navbar-top-content">
-                    <!-- Search Box -->
-                    <div class="navbar-search">
-                        <form action="search.html" method="get">
-                            <input type="text" placeholder="بحث..." name="q">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <!-- Centered Logo -->
-                    <div class="navbar-logo">
-                        <a href="index.html">
-                            <img src="img/logo.svg" alt="شعار المهاجر">
-                        </a>
-                    </div>
-                    <!-- Social Media Icons -->
-                    <div class="navbar-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="navbar-top-content">
+              <!-- Search Box -->
+              <div class="navbar-search">
+                <form action="search.html" method="get">
+                  <input type="text" placeholder="بحث..." name="q">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <!-- Centered Logo -->
+              <div class="navbar-logo">
+                <a href="index.html">
+                  <img src="img/logo.svg" alt="شعار المهاجر">
+                </a>
+              </div>
+              <!-- Social Media Icons -->
+              <div class="navbar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Bottom Navigation Links -->
+    
+        <!-- Bottom Bar: Contains navigation links and mobile controls -->
         <div class="navbar-bottom">
-            <div class="container">
-                <div class="navbar-bottom-content">
-                    <div class="navbar-mobile-menu">
-                        <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+          <div class="container">
+            <div class="navbar-bottom-content">
+    
+              <!-- Desktop Navigation Links -->
+              <ul class="navbar-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about-us.html">عن المهاجر</a></li>
+                <li><a href="result.html">نتائج البحث</a></li>
+                <li><a href="articles.html">المقالات</a></li>
+                <li><a href="single-article.html">المقال مفرد</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                <li><a href="mohajer-Info.html">معلومات ألمهاجر</a></li>
+                <!-- Mega Menu with Dropdown Options -->
+                <li class="mega-menu">
+                  <a href="#">المزيد <i class="fa fa-caret-down"></i></a>
+                  <div class="mega-menu-content">
+                    <div class="mega-menu-wrapper">
+                      <div class="mega-menu-column">
+                        <h4>قسم 1</h4>
+                        <ul>
+                          <li><a href="#">الرابط 1</a></li>
+                          <li><a href="#">الرابط 2</a></li>
+                          <li><a href="#">الرابط 3</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-menu-column">
+                        <h4>قسم 2</h4>
+                        <ul>
+                          <li><a href="#">الرابط 4</a></li>
+                          <li><a href="#">الرابط 5</a></li>
+                          <li><a href="#">الرابط 6</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-menu-column">
+                        <h4>قسم 3</h4>
+                        <ul>
+                          <li><a href="#">الرابط 7</a></li>
+                          <li><a href="#">الرابط 8</a></li>
+                          <li><a href="#">الرابط 9</a></li>
+                        </ul>
+                      </div>
                     </div>
-                    <ul class="navbar-links">
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="about-us.html">عن المهاجر</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="gallery.html">معرض الصور</a></li>
-                        <li><a href="articles.html">المقالات</a></li>
-                        <li><a href="single-article.html">المقال مفرد</a></li>
-                        <li><a href="contact.html">تواصل معنا</a></li>
-                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
-                        <li><a href="blog.html">المدونة</a></li>
-                        <li class="mega-menu">
-                            <a href="#">المزيد <i class="fa fa-caret-down"></i></a>
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-wrapper">
-                                    <div class="mega-menu-column">
-                                        <h4>قسم 1</h4>
-                                        <ul>
-                                            <li><a href="#">الرابط 1</a></li>
-                                            <li><a href="#">الرابط 2</a></li>
-                                            <li><a href="#">الرابط 3</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-menu-column">
-                                        <h4>قسم 2</h4>
-                                        <ul>
-                                            <li><a href="#">الرابط 4</a></li>
-                                            <li><a href="#">الرابط 5</a></li>
-                                            <li><a href="#">الرابط 6</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-menu-column">
-                                        <h4>قسم 3</h4>
-                                        <ul>
-                                            <li><a href="#">الرابط 7</a></li>
-                                            <li><a href="#">الرابط 8</a></li>
-                                            <li><a href="#">الرابط 9</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="navbar-mobile-search">
-                        <button class="mobile-search-toggle"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- Mobile Search Icon -->
+              <div class="navbar-mobile-search">
+                <button class="mobile-search-toggle"><i class="fa fa-search"></i></button>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
-
+      </nav>
+    
+      <nav class="navbar-mobile">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="شعار المهاجر">
+          </a>
+        </div>
+    
+        <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+    
+        <div class="navbar-links-mobile">
+          <button class="mobile-close"><i class="fa fa-times"></i></button>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about-us.html">عن المهاجر</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="articles.html">المقالات</a></li>
+            <li><a href="single-article.html">المقال مفرد</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            <li><a href="blog.html">المدونة</a></li>
+          </ul>
+        </div>
+      </nav>
     <!-- Main Articles Page Content -->
     <main class="articles-page my-5">
         <div class="container">
