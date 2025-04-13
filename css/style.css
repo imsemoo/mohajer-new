@@ -629,7 +629,7 @@ ul {
 
 /* Description styling */
 .news-description {
-  font-size: 14px;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -802,7 +802,7 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-
+margin: 0;
 }
 
 .article-slide .article-card .article-info {
@@ -1878,9 +1878,7 @@ input[type="date"]::-moz-push-button {
   }
 }
 
-.featured-articles-section .owl-dots{
-bottom: 35px;
-}
+
 .featured-articles-section
 .article-card .article-title{
   color: #fff;
