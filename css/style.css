@@ -847,9 +847,6 @@ ul {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.owl-dot:hover span {
-  transform: scale(1.1);
-}
 
 .owl-dot.active span {
   background: var(--secondary-color);
@@ -1179,7 +1176,6 @@ input[type="date"]::-moz-push-button {
 }
 
 .article-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -1306,9 +1302,7 @@ input[type="date"]::-moz-push-button {
 
 }
 
-.contact-details .detail-box:hover {
-  transform: translateY(-5px);
-}
+
 
 .contact-details .icon-container {
   width: 60px;
@@ -1882,4 +1876,12 @@ input[type="date"]::-moz-push-button {
   81% {
     box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
   }
+}
+
+.featured-articles-section .owl-dots{
+bottom: 35px;
+}
+.featured-articles-section
+.article-card .article-title{
+  color: #fff;
 }
