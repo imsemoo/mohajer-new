@@ -34,5 +34,29 @@ $(document).ready(function () {
         }
       }
     });
-  
+    $(".owl-about-us").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: true,
+      rtl: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+          0: {
+              items: 1
+          },
+          600: {
+              items: 3
+          },
+          1000: {
+              items: 4
+          }
+      }
+  });
+    // عند تحميل الصفحة بالكامل
+    $(window).on('load', function () {
+      $('#preloadr').fadeOut(500); // بيخفي اللودر بعد التحميل بـ 0.5 ثانية
+    });
+
 });
