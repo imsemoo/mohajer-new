@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+  <!-- Set character encoding and responsive viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تمكين - تفاصيل المقال</title>
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="تمكين: منصة المقالات التي تقدم محتوى قيم لتطوير المهارات وتمكين المرأة، مع تسليط الضوء على تحديات وفرص التطور المهني." />
-  <meta name="keywords" content="تمكين, مقال, تمكين المرأة, تطوير المهارات, هجرة الكفاءات, فرص العمل, محتوى عربي" />
+
+  <!-- SEO: Page Title and Meta Tags for a Single Article -->
+  <title>التحديات والفرص في دعم اللاجئين - منصة المهاجر</title>
+  <meta name="description" content="تحقيق شامل حول التحديات والفرص في دعم اللاجئين، مع تحليلات متعمقة وتقرير يسلط الضوء على السياسات والنتائج الاجتماعية والاقتصادية." />
+  <meta name="keywords" content="لاجئين, دعم, تحليلات, سياسات, تقرير, مهاجرين, منصة المهاجر" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://tamkeen.com/single-article.html" />
+  <link rel="canonical" href="https://elmohajernews.com/single-article.html" />
+
+  <!-- Open Graph and Twitter Cards -->
+  <meta property="og:site_name" content="المهاجر" />
+  <meta property="og:title" content="التحديات والفرص في دعم اللاجئين - منصة المهاجر" />
+  <meta property="og:description" content="تحقيق شامل يكشف الجوانب العميقة للتحديات والفرص في دعم اللاجئين، مدعوماً بتحليلات دقيقة ومقابلات حصرية." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://elmohajernews.com/single-article.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="التحديات والفرص في دعم اللاجئين - منصة المهاجر" />
+  <meta name="twitter:description" content="تحقيق شامل يكشف الجوانب العميقة للتحديات والفرص في دعم اللاجئين مع تحليل مفصل للسياسات والتجارب الميدانية." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css" />
@@ -16,381 +36,483 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Custom CSS for Single Article Page -->
-  <link rel="stylesheet" href="css/single-article.css" />
 
-  <!-- Preload Critical Resources -->
+  <!-- Custom CSS for Single Article Page -->
+  <style>
+    /* Hero header for the article */
+    .article-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .article-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      color: #fff;
+    }
+    .hero-overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .article-meta {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* Article Content Styling */
+    .article-content {
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 50px;
+    }
+    .article-content p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+    .article-content h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--secondary-color);
+    }
+    .article-content h3 {
+      font-size: 1.5rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+      color: #444;
+    }
+    .article-content blockquote {
+      border-right: 5px solid var(--secondary-color);
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #f7f7f7;
+      font-style: italic;
+      color: #555;
+    }
+    .article-content ul {
+      list-style: disc inside;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Social Share Section */
+    .social-share {
+      margin: 30px 0;
+      padding: 15px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    .social-share h5 {
+      margin-bottom: 10px;
+    }
+    .social-share a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      transition: color 0.3s ease;
+    }
+    .social-share a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Author Bio Section */
+    .author-bio {
+      margin: 50px 0;
+    }
+    .bio-container {
+      background: #f7f7f7;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .bio-image {
+      flex: 0 0 150px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .bio-image img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .bio-info {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .bio-info h4 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .bio-info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #555;
+    }
+    .author-social a {
+      margin: 0 8px;
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      transition: color 0.3s ease;
+    }
+    .author-social a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Related Articles Section */
+    .related-articles {
+      margin-top: 50px;
+    }
+    .related-articles h3 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 5px;
+      color: #333;
+    }
+    .related-articles .article-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .related-articles .article-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .article-hero h1 {
+        font-size: 2rem;
+      }
+      .bio-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .bio-info {
+        padding-right: 0;
+      }
+    }
+  </style>
+
+  <!-- Preload critical resources -->
   <link rel="preload" href="css/style.css" as="style" />
   <link rel="preload" href="js/script.js" as="script" />
-
-   <!-- Favicon -->
-   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "headline": "استراتيجيات التطور المهني للمرأة في الوطن",
-      "datePublished": "2025-03-15T09:00:00+03:00",
-      "image": "https://dummyimage.com/1200x600/ddd/000",
-      "author": {
-        "@type": "Person",
-        "name": "د. ليلى أحمد",
-        "description": "خبيرة في تطوير المهارات وتمكين المرأة مع خبرة تزيد عن 15 عاماً."
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "منصة تمكين",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://tamkeen.com/img/logo.png"
-        }
-      },
-      "keywords": "تمكين, مقال, تطوير المهارات, تمكين المرأة, فرص العمل"
-    }
-  </script>
-
- 
 </head>
+
 <body>
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <img src="img/logo.png" alt="شعار تمكين" class="navbar-logo" />
-      </a>
-
-      <!-- Toggler Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <!-- Home Link -->
-              <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
-              </li>
-
-              <!-- Studies Link -->
-              <li class="nav-item">
-                  <a class="nav-link" href="gallary.html">معرض الصور</a>
-              </li>
-
-              <!-- Articles Link -->
-              <li class="nav-item">
-                  <a class="nav-link " href="articles.html">المقالات</a>
-              </li>
-
-              <!-- Studies Link -->
-              <li class="nav-item">
-                  <a class="nav-link active" href="single-article.html">المقال مفرد</a>
-              </li>
-
-              <!-- Courses Link -->
-              <li class="nav-item">
-                  <a class="nav-link" href="courses.html">الدورات</a>
-              </li>
-
-              <!-- About Link -->
-              <li class="nav-item">
-                  <a class="nav-link " href="about-us.html">عن تمكين</a>
-              </li>
-
-              <!-- Contact Link -->
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">تواصل معنا</a>
-              </li>
-          </ul>
-
-          <!-- Join Now Button -->
-          <a href="#" class="btn btn-primary">
-              <i class="fa-solid fa-user-plus"></i>
-              انضم الآن
-          </a>
-      </div>
-  </div>
-</nav>
-  <!-- Single Article Section -->
-  <section class="single-article section single-article-pro">
-    <div class="container">
-      <div class="row">
-        <!-- Main Article Content -->
-        <div class="col-lg-8">
-          <!-- Article Header Image -->
-          <img src="https://dummyimage.com/1200x600/ddd/000" class="img-fluid rounded mb-4" alt="تفاصيل المقال">
-          <!-- Article Title -->
-          <h1>استراتيجيات التطور المهني للمرأة في الوطن</h1>
-          <!-- Article Meta Information -->
-          <div class="article-meta d-flex align-items-center mb-4">
-            <div class="d-flex align-items-center me-3">
-              <img src="img/icons/calendar.png" alt="Calendar icon">
-              15 مارس 2025 | 09:00 صباحاً
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="fa-solid fa-user me-1"></i>
-              <span>د. ليلى أحمد</span>
-            </div>
+  <!-- Navbar Section (Reused from main template) -->
+  <nav class="custom-navbar">
+    <div class="navbar-top">
+      <div class="container">
+        <div class="navbar-top-content">
+          <!-- Search Box -->
+          <div class="navbar-search">
+            <form action="search.html" method="get">
+              <input type="text" placeholder="بحث..." name="q">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
           </div>
-          <!-- Article Content -->
-          <article class="article-content">
-            <p>
-              تواجه العديد من المناطق تحديات كبيرة في احتفاظها بالكفاءات النسائية المتميزة؛ إذ تُعاني المرأة من نقص الفرص التي تُراعي احتياجاتها الخاصة ومهامها الأسرية مثل تربية الأبناء ورعاية الأسرة.
-            </p>
-            <p>
-              في هذا السياق، تعتبر البيئات الداعمة للنمو المهني أمراً حيوياً، حيث يمكن للمرأة أن تتطور وتحقق إنجازاتها دون الاضطرار للهجرة لإتمام دراساتها أو العمل في الخارج. يقدم المقال استعراضاً لعدد من الاستراتيجيات والمبادرات التي يمكن أن تسهم في توفير فرص محلية متكاملة.
-            </p>
-            <p>
-              من بين هذه الاستراتيجيات إنشاء مراكز تدريبية متخصصة، دعم المبادرات النسائية، وتقديم حوافز للشركات التي توظف وتطور مهارات الكادر النسائي. كما أن التعاون بين الجهات الحكومية والخاصة يلعب دوراً مهماً في خلق بيئة عمل مرنة تتناسب مع ظروف المرأة.
-            </p>
-            <p>
-              وفي ضوء التجارب الناجحة في بعض الدول، يمكن استلهام نماذج تُقلل من معدلات هجرة الكفاءات النسائية وتُحقق التنمية المستدامة داخل الوطن، مما يؤدي إلى استثمار الإمكانيات المتاحة لصالح المجتمع.
-            </p>
-          </article>
-
-          <!-- Author Information Section -->
-          <div class="author-info d-flex align-items-center mt-4">
-            <img src="https://dummyimage.com/100x100/ccc/000" alt="صورة الكاتب">
-            <div class="author-details">
-              <h4>د. ليلى أحمد</h4>
-              <p>خبيرة في تطوير المهارات وتمكين المرأة مع خبرة تمتد لأكثر من 15 عاماً في دعم الكفاءات النسائية وتحفيزها لتحقيق النجاح المهني.</p>
-            </div>
+          <!-- Centered Logo -->
+          <div class="navbar-logo">
+            <a href="index.html">
+              <img src="img/logo.svg" alt="شعار المهاجر">
+            </a>
           </div>
-
-          <!-- Article Tags Section -->
-          <div class="article-tags">
-            <strong>تاجات:</strong>
-            <span>تمكين</span>
-            <span>تطوير مهني</span>
-            <span>كفاءات نسائية</span>
-            <span>فرص العمل</span>
-          </div>
-        </div>
-
-        <!-- Sidebar: Similar Articles -->
-        <div class="col-lg-4">
-          <aside class="similar-articles">
-            <h2 class="section-title">مقالات مشابهة</h2>
-            <!-- Similar Article Item #1 -->
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/ccc/000" alt="مقال مشابه 1" loading="lazy">
-              <div>
-                <h5>فرص التطور المهني</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  12 فبراير 2025
-                </small>
-              </div>
-            </div>
-            <!-- Similar Article Item #2 -->
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/ddd/000" alt="مقال مشابه 2" loading="lazy">
-              <div>
-                <h5>بيئة عمل داعمة</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  05 مارس 2025
-                </small>
-              </div>
-            </div>
-            <!-- Similar Article Item #3 -->
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-            <div class="similar-article-item">
-              <img src="https://dummyimage.com/100x80/bbb/000" alt="مقال مشابه 3" loading="lazy">
-              <div>
-                <h5>دعم المبادرات النسائية</h5>
-                <small>
-                  <img src="img/icons/calendar.png" alt="Calendar icon" style="width: 12px;">
-                  20 يناير 2025
-                </small>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Comments Section -->
-  <section class="comments-section single-article-pro">
-    <div class="container">
-      <h2>تعليقات القراء</h2>
-      <!-- Comment Form -->
-      <div class="comment-form">
-        <form action="#" method="post">
-          <div class="mb-3">
-            <label for="commentName" class="form-label">الاسم</label>
-            <input type="text" class="form-control" id="commentName" placeholder="أدخل اسمك">
-          </div>
-          <div class="mb-3">
-            <label for="commentText" class="form-label">التعليق</label>
-            <textarea class="form-control" id="commentText" rows="4" placeholder="اكتب تعليقك هنا"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">إرسال التعليق</button>
-        </form>
-      </div>
-      <!-- Comments List -->
-      <div class="comments-list mt-4">
-        <!-- Sample Comment Item -->
-        <div class="comment-item">
-          <div class="d-flex align-items-center mb-2">
-            <img src="https://dummyimage.com/50x50/ccc/000" alt="صورة القارئ" class="rounded-circle" width="50" height="50">
-            <h5 class="mb-0" style="font-family: 'cairo-SemiBold';">سارة محمد</h5>
-          </div>
-          <p class="mb-0">مقال رائع ومفيد جداً، أشكركم على هذا المحتوى الثري.</p>
-        </div>
-        <!-- Additional Comment Items can be added here -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Additional Useful Section (e.g., Latest Updates) -->
-  <section class="additional-section single-article-pro" style="padding: 60px 0; ">
-    <div class="container">
-      <h2 style="font-family: 'cairo-Bold'; text-align: center; margin-bottom: 30px; color: var(--text-color);">آخر تحديثات منصة تمكين</h2>
-      <div class="row">
-        <!-- Update Item #1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card ">
-            <img src="https://dummyimage.com/400x250/ddd/000" class="card-img-top" alt="تحديث 1" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'cairo-Bold';">إطلاق مبادرة جديدة</h5>
-              <p class="card-text" style="font-size: 0.9rem; color: var(--text-muted-color);">أطلقت منصة تمكين مبادرة جديدة لدعم رائدات الأعمال وتطوير مهاراتهن.</p>
-              <a href="#" class="read-more" style="font-size: 0.9rem;">اقرأ المزيد</a>
-            </div>
-          </div>
-        </div>
-        <!-- Update Item #2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card ">
-            <img src="https://dummyimage.com/400x250/ccc/000" class="card-img-top" alt="تحديث 2" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'cairo-Bold';">دورة تدريبية مميزة</h5>
-              <p class="card-text" style="font-size: 0.9rem; color: var(--text-muted-color);">تعرف على تفاصيل الدورة التدريبية القادمة التي ستسهم في تطوير المهارات الرقمية.</p>
-              <a href="#" class="read-more" style="font-size: 0.9rem;">اقرأ المزيد</a>
-            </div>
-          </div>
-        </div>
-        <!-- Update Item #3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card ">
-            <img src="https://dummyimage.com/400x250/bbb/000" class="card-img-top" alt="تحديث 3" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'cairo-Bold';">ورشة عمل مميزة</h5>
-              <p class="card-text" style="font-size: 0.9rem; color: var(--text-muted-color);">انضم إلى ورشة العمل القادمة التي تركز على تعزيز مهارات القيادة والتفكير الإبداعي.</p>
-              <a href="#" class="read-more" style="font-size: 0.9rem;">اقرأ المزيد</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="custom-footer">
-    <div class="container">
-      <div class="footer-content">
-        <!-- Social Media & Logo -->
-        <div class="footer-section social">
-          <div class="logo">
-            <img src="img/logo.png" alt="شعار تمكين" />
-          </div>
-          <div class="social-icons">
+          <!-- Social Media Icons -->
+          <div class="navbar-social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-bottom">
+      <div class="container">
+        <div class="navbar-bottom-content">
+          <div class="navbar-mobile-menu">
+            <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+          </div>
+          <ul class="navbar-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about-us.html">عن المهاجر</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="articles.html">المقالات</a></li>
+            <li><a href="single-article.html">المقال مفرد</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            <li><a href="blog.html">المدونة</a></li>
+            <li class="mega-menu">
+              <a href="#">المزيد <i class="fa fa-caret-down"></i></a>
+              <div class="mega-menu-content">
+                <div class="mega-menu-wrapper">
+                  <div class="mega-menu-column">
+                    <h4>قسم 1</h4>
+                    <ul>
+                      <li><a href="#">الرابط 1</a></li>
+                      <li><a href="#">الرابط 2</a></li>
+                      <li><a href="#">الرابط 3</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h4>قسم 2</h4>
+                    <ul>
+                      <li><a href="#">الرابط 4</a></li>
+                      <li><a href="#">الرابط 5</a></li>
+                      <li><a href="#">الرابط 6</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h4>قسم 3</h4>
+                    <ul>
+                      <li><a href="#">الرابط 7</a></li>
+                      <li><a href="#">الرابط 8</a></li>
+                      <li><a href="#">الرابط 9</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="navbar-mobile-search">
+            <button class="mobile-search-toggle"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area: Single Article -->
+  <main class="container my-5">
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb justify-content-end">
+        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+        <li class="breadcrumb-item"><a href="articles.html">المقالات</a></li>
+        <li class="breadcrumb-item active" aria-current="page">التحديات والفرص في دعم اللاجئين</li>
+      </ol>
+    </nav>
+
+    <!-- Article Hero Header -->
+    <section class="article-hero mb-5">
+      <img src="https://dummyimage.com/1200x600/cccccc/000000" alt="صورة المقال الرئيسية">
+      <div class="hero-overlay">
+        <h1>التحديات والفرص في دعم اللاجئين</h1>
+        <!-- Article Meta: Date, Author, Category -->
+        <div class="article-meta">
+          <span><i class="fa fa-calendar-alt"></i> 21 مارس 2025</span>
+          <span class="ms-3"><i class="fa fa-user"></i> بقلم أحمد يوسف</span>
+          <span class="ms-3"><i class="fa fa-tag"></i> سياسة</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content Section -->
+    <section class="article-content mb-5">
+      <p class="lead">
+        يقدم هذا المقال تحليلاً شاملاً للتحديات والفرص في دعم اللاجئين من مختلف الجهات، مع التركيز على دور السياسات الحكومية والمبادرات المجتمعية.
+      </p>
+      
+      <h2>مقدمة</h2>
+      <p>
+        تشهد الدول العديد من التحديات في مواجهة تداعيات الأزمات الإنسانية التي تؤدي إلى زيادة أعداد اللاجئين، ما يستدعي تدخلات فورية وقوية من قبل الجهات المختصة. في هذا المقال، نستعرض أبرز التحديات التي تواجه اللاجئين، إلى جانب الفرص المتاحة لتحسين الظروف المعيشية لهم.
+      </p>
+      
+      <h2>التحديات الرئيسية</h2>
+      <p>
+        هناك العديد من التحديات التي تؤثر على حياة اللاجئين، منها:
+      </p>
+      <ul>
+        <li>النقص في الخدمات الأساسية مثل الصحة والتعليم.</li>
+        <li>تدهور الوضع الاقتصادي وزيادة معدلات الفقر.</li>
+        <li>الظروف المعيشية الصعبة في المخيمات.</li>
+        <li>صعوبة اندماجهم في المجتمعات الجديدة.</li>
+      </ul>
+      
+      <h3>السياسات الحكومية وتأثيرها</h3>
+      <p>
+        تلعب السياسات الحكومية دورًا حاسمًا في تحديد مستقبل اللاجئين، إذ أن تبني سياسات متكاملة يمكن أن يسهم في تحسين ظروفهم بشكل كبير. فقد شهدنا في بعض الدول تطبيق برامج متكاملة تشمل:
+      </p>
+      <p>
+        <strong>برامج تدريب وتأهيل:</strong> تهدف إلى تمكين اللاجئين من اكتساب مهارات جديدة توفر لهم فرص عمل أفضل، مما يساهم في اقتصادياتهم المحلية.
+      </p>
+      <p>
+        بالإضافة إلى ذلك، تعمل بعض الدول على توفير خدمات صحية وتعليمية مجانية في المخيمات، مما يخفف من وطأة التحديات المعيشية.
+      </p>
+      
+      <h2>فرص التحسين والتجديد</h2>
+      <p>
+        بالرغم من التحديات، توجد فرص واعدة لتحسين أوضاع اللاجئين. من بين هذه الفرص:
+      </p>
+      <ul>
+        <li>الشراكة بين القطاع الحكومي والخاص لتوفير فرص الاستثمار في مناطق اللاجئين.</li>
+        <li>المبادرات المجتمعية التي تهدف إلى دمج اللاجئين في الحياة الاجتماعية والاقتصادية.</li>
+        <li>استخدام التكنولوجيا لتسهيل وصول الخدمات الأساسية وتوفير المعلومات المهمة.</li>
+      </ul>
+      
+      <blockquote>
+        "داخل معاناة اللاجئين تكمن إمكانيات غير مستغلة، حيث يمكن للتحول في السياسات أن يحدث فرقاً كبيراً في حياة الملايين."
+      </blockquote>
+      
+      <h2>دراسة حالة</h2>
+      <p>
+        في إحدى الدول التي شهدت ارتفاعًا ملحوظاً في أعداد اللاجئين، قامت الحكومة بإطلاق مبادرة "إنعاش" التي هدفت إلى:
+      </p>
+      <p>
+        توفير مراكز تدريب وتأهيل مشتركة مع منظمات دولية، مما أدى إلى تحسين فرص العمل ورفع مستوى التعليم في المناطق المتضررة.
+      </p>
+      <p>
+        وبفضل هذه المبادرة، استطاع عدد كبير من اللاجئين تحقيق استقلالية اقتصادية أكبر واندماج فعال في المجتمع المحلي.
+      </p>
+      
+      <h2>خاتمة</h2>
+      <p>
+        في الختام، يظل دعم اللاجئين تحديًا مستمرًا يتطلب تضافر الجهود بين الحكومات والمنظمات الإنسانية والمجتمعات المحلية. إن التحول في السياسات وتبني مبادرات فعالة يمكن أن يحول معاناة الملايين إلى فرص حقيقية للتنمية والاندماج الاجتماعي.
+      </p>
+    </section>
+
+    <!-- Social Share Section -->
+    <section class="social-share mb-5">
+      <h5>شارك المقال على:</h5>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </section>
+
+    <!-- Author Bio Section -->
+    <section class="author-bio mb-5">
+      <div class="bio-container">
+        <div class="bio-image">
+          <img src="https://dummyimage.com/150x150/cccccc/000000" alt="صورة الكاتب">
+        </div>
+        <div class="bio-info">
+          <h4>عن الكاتب: أحمد يوسف</h4>
+          <p>
+            أحمد يوسف هو صحفي وتحليل سياسي مع خبرة تمتد لأكثر من 7 سنوات في تغطية الأزمات الإنسانية والسياسية. يعمل على تقديم تقارير استقصائية تحليلية تركز على القضايا الإنسانية والاجتماعية، ويفخر بنقل الحقائق بشفافية.
+          </p>
+          <div class="author-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-        <!-- Useful Links -->
-        <div class="footer-section links">
-          <h4>روابط مفيدة</h4>
-          <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="courses.html">الدورات</a></li>
-            <li><a href="studies.html">الدراسات</a></li>
-            <li><a href="about-us.html">من نحن</a></li>
-            <li><a href="articles.html">المقالات</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles mb-5">
+      <h3>مقالات مشابهة</h3>
+      <div class="row g-4">
+        <!-- Related Article Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="article-card">
+            <img src="https://dummyimage.com/400x250/dddddd/000000" alt="مقال مشابه 1">
+            <div class="p-3">
+              <div class="news-meta mb-2">
+                <span><i class="fa fa-calendar-alt"></i> 20 مارس 2025</span>
+              </div>
+              <h5 class="article-title mb-2">عنوان مقال مشابه 1</h5>
+              <p class="article-desc">تحليل موجز يقدم نظرة عامة على الموضوع بصورة شاملة.</p>
+            </div>
+          </div>
         </div>
-        <!-- About Section -->
-        <div class="footer-section about">
-          <p>
-            استطاعت النساء تحقيق طموحها وخلق مشاريعها الخاصة مع الظروف التي أتاحت لهن التعلم وكسب التنمية الذاتية.
-          </p>
+        <!-- Related Article Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="article-card">
+            <img src="https://dummyimage.com/400x250/cccccc/000000" alt="مقال مشابه 2">
+            <div class="p-3">
+              <div class="news-meta mb-2">
+                <span><i class="fa fa-calendar-alt"></i> 19 مارس 2025</span>
+              </div>
+              <h5 class="article-title mb-2">عنوان مقال مشابه 2</h5>
+              <p class="article-desc">تقرير سريع حول التطورات الأخيرة وتأثيرها على السياسات المحلية.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Related Article Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="article-card">
+            <img src="https://dummyimage.com/400x250/bbbbbb/000000" alt="مقال مشابه 3">
+            <div class="p-3">
+              <div class="news-meta mb-2">
+                <span><i class="fa fa-calendar-alt"></i> 18 مارس 2025</span>
+              </div>
+              <h5 class="article-title mb-2">عنوان مقال مشابه 3</h5>
+              <p class="article-desc">ملخص موجز يستعرض جوانب عدة تشجع القارئ على المزيد.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Footer Bottom -->
+    </section>
+  </main>
+
+  <!-- Footer Section (Reused from main template) -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Footer Column 1: Logo and Description -->
+        <div class="footer-column footer-logo-desc">
+          <a href="index.html" class="footer-logo-link">
+            <img src="img/logo.svg" alt="شعار المهاجر" class="footer-logo">
+          </a>
+          <p class="footer-description">
+            منصة المهاجر هي مرجع إعلامي وخدمي يقدم تغطية شاملة وتحليلات دقيقة للمهاجرين واللاجئين في مصر والشرق الأوسط.
+          </p>
+        </div>
+        <!-- Footer Column 2: Useful Links -->
+        <div class="footer-column footer-links">
+          <h4>روابط مفيدة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">عن الموقع</a></li>
+            <li><a href="#">الخدمات</a></li>
+            <li><a href="#">المقالات</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column 3: Explore -->
+        <div class="footer-column footer-links">
+          <h4>استكشاف</h4>
+          <ul>
+            <li><a href="#">معرض الصور</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">المدونة</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column 4: Social Media -->
+        <div class="footer-column footer-data">
+          <h4>بياناتنا</h4>
+          <p>تابعونا على مواقع التواصل الاجتماعي للبقاء على اطلاع دائم بآخر أخبارنا وتحديثاتنا.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom: Copyright -->
       <div class="footer-bottom">
-        <p>جميع الحقوق محفوظة © 2025 منصة تمكين</p>
+        <p>&copy; 2025 جميع الحقوق محفوظة لموقع المهاجر</p>
       </div>
     </div>
   </footer>
 
+  <!-- JavaScript Files: jQuery, Owl Carousel, GSAP, Bootstrap, and Custom Scripts -->
   <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
   <script src="js/owl.carousel.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

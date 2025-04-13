@@ -11,7 +11,7 @@ $(document).ready(function () {
       });
     });
 
-    $("#articlesSlider").owlCarousel({
+    $(".articlesSlider").owlCarousel({
       loop: true,             
       rtl: true,
       margin: 15,           

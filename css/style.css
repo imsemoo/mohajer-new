@@ -39,6 +39,11 @@
 }
 
 @font-face {
+  font-family: "cairo-Regular";
+  src: url(../fonts/Al-Jazeera-Arabic\ Regular.ttf);
+}
+
+@font-face {
   font-family: "cairo-SemiBold";
   src: url(../fonts/Cairo-SemiBold.ttf);
 }
@@ -74,6 +79,37 @@ body {
 .section {
   padding: 80px 0;
 }
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  /* Darker variant for hover effect */
+  background-color: #019ecf;
+  border-color: #019ecf;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  /* Darker variant for hover effect */
+  background-color: #e67e0e;
+  border-color: #e67e0e;
+}
+
 
 /* Headings */
 .h1,
@@ -660,9 +696,10 @@ ul {
 
 .main-news-box .body-card {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   padding: 16px;
   z-index: 10;
+  width: 100%;
 
 }
 
@@ -737,14 +774,25 @@ ul {
   margin-bottom: 30px;
 }
 
+.section-title img {
+  height: 25px;
+}
+
 .section-title h2 {
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 24px;
   line-height: 150%;
 
 
 }
 
+.investigations-section .news-box .img-card {
+  height: 160px;
+  width: 220px;
+
+}
+
+.reports .news-box .img-card,
 .featured-articles-section .news-box .img-card {
   width: 220px;
   height: 155px;
@@ -833,14 +881,17 @@ ul {
 .list-featured-small .article-slide .article-card .article-info {
   bottom: 0;
 }
-#articlesSlider .article-slide .article-card .img-card{
+
+#articlesSlider .article-slide .article-card .img-card {
   width: 100%;
   height: 400px;
 }
-#articlesSlider .article-slide .article-card .img-card img{
+
+#articlesSlider .article-slide .article-card .img-card img {
   height: 100%;
   object-fit: cover;
 }
+
 .main-news-box::after,
 .article-slide .article-card .img-card::after,
 .list-featured-small .article-slide .img-card::after {
@@ -852,4 +903,363 @@ ul {
   height: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 
+}
+
+.news-box-vrtical {
+  flex-direction: column;
+}
+
+.news-box-vrtical .img-card {
+  height: 280px !important;
+  width: 100% !important;
+}
+
+.section-main .news-box-small .img-card {
+  height: 90px;
+  width: 90px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.section-main .must-read .news-box {
+  border: none;
+  gap: 10px;
+}
+
+.section-main .must-read .body-card {
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .main-news-box {
+    max-height: 300px;
+  }
+
+  .main-news-box .body-card {
+    padding: 10px;
+  }
+
+  .main-news-box .news-meta,
+  .main-news-box .body-card .news-title {
+    font-size: 14px;
+  }
+
+  .title-small-cards h5 {
+    font-size: 16px;
+  }
+
+  .list-small-cards .news-box-small .img-card {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .list-featured-small,
+  .article-list .news-box {
+    flex-direction: column;
+  }
+
+  .featured-articles-section .news-box .img-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .container-small-cards {
+    height: auto;
+  }
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  background: hsl(32 93% 96% / 1);
+  padding: 20px;
+  justify-content: space-between;
+  border-radius: 12px;
+
+
+}
+
+.newsletter {
+
+  background: #0194C7;
+  padding: 20px;
+
+
+}
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter .text {
+  flex: 2;
+}
+
+.newsletter .form {
+  flex: 1;
+}
+
+.newsletter .text h2 {
+  color: #fff;
+  font-size: 36px;
+  text-align: start;
+}
+
+.subscription .iocn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: hsl(32 93% 96% / 1);
+  border: 2px dashed var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-articles-section .articlesSlider .article-slide .img-card {
+  height: 400px;
+}
+
+.featured-articles-section .articlesSlider .article-slide .img-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.filter-form .btn {
+  text-wrap-mode: nowrap;
+}
+
+.articles-page .img-card {
+  height: 260px;
+  width: 100%;
+}
+
+.articles-page .img-card img {
+  width: 100%;
+}
+
+.articles-page .article-card {
+  min-height: 450px;
+}
+
+.active>.page-link,
+.page-link.active {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.page-link {
+  color: var(--primary-color);
+
+}
+
+/* Filter Form Container */
+.filter-form {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Form Layout: Use flex-wrap to allow multiple rows on small screens */
+.filter-form form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Each Filter Item: Wrapping the icon with its field */
+.filter-item {
+  position: relative;
+  flex: 1 1 180px;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon Styling inside Filter Items */
+.filter-item i {
+  position: absolute;
+  right: 10px;
+  /* For RTL layout, icon is placed on the right */
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Style for Input and Select fields to leave space for the icon */
+.filter-item input,
+.filter-item select {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  /* Extra padding on right for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* Placeholder text style */
+.filter-item input::placeholder {
+  text-align: right;
+}
+
+/* Hide the native date icon in Chrome, Safari, and Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  /* Make it invisible */
+  cursor: pointer;
+  /* Keep pointer behavior */
+}
+
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  /* Hide other internal buttons if any */
+}
+
+/* Remove Firefox's default background icon */
+input[type="date"]::-moz-push-button {
+  display: none;
+}
+
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #f5a549;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section for Search Results */
+.search-results-header {
+  background: var(--background-primary-color);
+  border: 1px solid hsl(195, 99%, 90%);
+  color: var(--primary-color);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-results-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.results-count {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Articles Grid Styling */
+.article-card {
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-card img {
+  width: 100%;
+  height: auto;
+}
+
+.article-card .p-3 {
+  padding: 15px;
+}
+
+.article-card .news-meta {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.article-card .article-title {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.article-card .article-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.sidebar h4 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f5a549;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.recommended-articles img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination .page-link {
+  color: #f5a549;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination .page-item.active .page-link {
+  background: #f5a549;
+  border-color: #f5a549;
+  color: #fff;
+}
+
+.pagination .page-link:hover {
+  background: #f5a549;
+  color: #fff;
+}
+
+/* Additional spacing for responsiveness */
+@media (max-width: 767px) {
+  .search-results-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .results-count {
+    font-size: 0.9rem;
+  }
 }
