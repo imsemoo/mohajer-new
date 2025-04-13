@@ -102,11 +102,11 @@
 <body>
   <div id="preloadr">
     <div class="typewriter">
-        <div class="slide"><i></i></div>
-        <div class="paper"></div>
-        <div class="keyboard"></div>
+      <div class="slide"><i></i></div>
+      <div class="paper"></div>
+      <div class="keyboard"></div>
     </div>
-</div>
+  </div>
   <!-- Navigation Bar Section -->
   <nav class="custom-navbar">
     <!-- Top Bar: Contains search box, centered logo, and social media icons -->
@@ -141,21 +141,17 @@
     <div class="navbar-bottom">
       <div class="container">
         <div class="navbar-bottom-content">
-          <!-- Hamburger Menu for Mobile -->
-          <div class="navbar-mobile-menu">
-            <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
-          </div>
+
           <!-- Desktop Navigation Links -->
           <ul class="navbar-links">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="about-us.html">عن المهاجر</a></li>
-            <li><a href="services.html">الخدمات</a></li>
-            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="result.html">نتائج البحث</a></li>
             <li><a href="articles.html">المقالات</a></li>
             <li><a href="single-article.html">المقال مفرد</a></li>
             <li><a href="contact.html">تواصل معنا</a></li>
             <li><a href="faq.html">الأسئلة الشائعة</a></li>
-            <li><a href="blog.html">المدونة</a></li>
+            <li><a href="mohajer-Info.html">معلومات ألمهاجر</a></li>
             <!-- Mega Menu with Dropdown Options -->
             <li class="mega-menu">
               <a href="#">المزيد <i class="fa fa-caret-down"></i></a>
@@ -198,6 +194,31 @@
     </div>
   </nav>
 
+  <nav class="navbar-mobile">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="شعار المهاجر">
+      </a>
+    </div>
+
+    <button class="mobile-menu-toggle"><i class="fa fa-bars"></i></button>
+
+    <div class="navbar-links-mobile">
+      <button class="mobile-close"><i class="fa fa-times"></i></button>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about-us.html">عن المهاجر</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="gallery.html">معرض الصور</a></li>
+        <li><a href="articles.html">المقالات</a></li>
+        <li><a href="single-article.html">المقال مفرد</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Main Content Area -->
   <main>
     <!-- Home News Section -->
@@ -206,7 +227,7 @@
         <!-- Using Bootstrap row with three columns -->
         <div class="row g-3 h-100">
           <!-- Left Column: Two Medium News Items -->
-          <div class="col-lg-3 d-flex flex-column">
+          <div class="col-lg-3 d-flex flex-column order-2 order-md-1">
             <!-- Medium News Item #1 -->
             <div class="d-flex flex-column mb-3 news-box">
               <!-- News Image -->
@@ -218,7 +239,7 @@
                 <h5 class="news-title mb-1">تحديث حول مشاريع التنمية المحلية</h5>
                 <!-- News Description -->
                 <p class="news-description mb-0">
-                  أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية التحتية   .
+                  أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية التحتية .
                 </p>
               </div>
             </div>
@@ -231,14 +252,14 @@
               <div class="body-card">
                 <h5 class="news-title mb-1">تحديث حول مشاريع التنمية المحلية</h5>
                 <p class="news-description mb-0">
-                أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية .
+                  أعلنت اليوم الجهات المعنية عن استكمال المرحلة الأولى من مشروع البنية .
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Center Column: One Large News Item -->
-          <div class="col-lg-6 d-flex">
+          <div class="col-lg-6 d-flex order-1 order-md-2">
             <div class="owl-carousel owl-theme articlesSlider" id="">
               <!-- Slide 1 -->
               <div class="item article-slide">
@@ -309,7 +330,7 @@
           </div>
 
           <!-- Right Column: "ما يحدث الآن" Section with Small News Items -->
-          <div class="col-lg-3 d-flex flex-column">
+          <div class="col-lg-3 d-flex flex-column order-3 order-md-3">
             <div class="container-small-cards">
               <!-- Section Title and "See More" link -->
               <div class="title-small-cards">
@@ -396,7 +417,7 @@
         </div>
         <div class="row g-3">
           <!-- Left Column: List of Articles -->
-          <div class="col-md-6">
+          <div class="col-md-6  order-2 order-md-1">
             <div class="article-list">
               <!-- Article 1 -->
               <div class="d-flex mb-3 news-box">
@@ -477,7 +498,7 @@
             </div>
           </div>
           <!-- Right Column: Slider and Featured Small Articles -->
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-2">
             <!-- Owl Carousel Slider for Articles -->
             <div class="owl-carousel owl-theme articlesSlider" id="">
               <!-- Slide 1 -->
@@ -1102,7 +1123,7 @@
                 </p>
                 <p class="news-description mb-0">
                   تواجه طلاب المخيمات صعوبات في الوصول إلى التعليم الجيد، مما يهدد مستقبلهم وفرصهم المهنية على المدى
-                  
+
                 </p>
               </div>
             </div>
@@ -1174,8 +1195,6 @@
         </div>
       </div>
     </section>
-
-    
 
   </main>
 

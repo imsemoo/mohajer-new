@@ -58,5 +58,21 @@ $(document).ready(function () {
     $(window).on('load', function () {
       $('#preloadr').fadeOut(500); // بيخفي اللودر بعد التحميل بـ 0.5 ثانية
     });
+    $(".mobile-menu-toggle").on("click", function () {
+      $(".navbar-links-mobile").addClass("active");
+      $("body").addClass("mobile-menu-open");
+    });
 
+    $(".mobile-close").on("click", function () {
+      $(".navbar-links-mobile").removeClass("active");
+      $("body").removeClass("mobile-menu-open");
+    });
+
+    // لو ضغط المستخدم بره القائمة
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest('.navbar-links-mobile, .mobile-menu-toggle').length) {
+        $(".navbar-links-mobile").removeClass("active");
+        $("body").removeClass("mobile-menu-open");
+      }
+    });
 });
